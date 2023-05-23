@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgb(137, 119, 154);
+    height: 80px;
+    justify-content: flex-start;
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 45% 45% 45%;
+}
+
+body {
+    background-color: rgb(137, 119, 154);
+}
+
+@media screen and (max-width: 767px) {
+    .container{
+    display: grid;
+    grid-template-columns: 100%;
+ 
+}}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        display: grid;
+        grid-template-columns: 50%;
+    }
+}
